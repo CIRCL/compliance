@@ -5,3 +5,7 @@ This repository contains information and materials to support CSIRT activities a
 ## GDPR
 
 - [JSON Schema for GDPR records of processing activities](https://github.com/CIRCL/compliance/blob/master/gdpr/json-schema/processing-activities-records-schema.json)
+
+### Privacy notices for CSIRT services
+
+- [Privacy notice for OpenPGP keyserver](gdpr/notice-template/privacy_notice_openpgpkeyserver.md)
