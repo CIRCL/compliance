@@ -1,0 +1,80 @@
+[
+  {
+    "id_old": 21,
+    "id": 20,
+    "name": "OpenPGP key server",
+    "purpose": "GDPR Recital 49 - ensuring network and information security",
+    "description": {
+      "type": "Proactive Activities",
+      "summary": "Hosting a distributed PGP key server",
+      "tools": [
+        "OpenPGP server"
+      ],
+      "RFC_2350_generic": [
+        "3.5.2. Proactive Activities - Security Tools"
+      ],
+      "RFC_2350_CIRCL": [
+        "Proactive services - Development of security tools in the field of analysis, threat and information sharing, security assessments."
+      ]
+    },
+    "legal_ground": {
+      "lawfulness": "processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller"
+    },
+    "data_subjects": [
+      "Individuals (who freely upload a PGP key on the server)"
+    ],
+    "personal_data": {
+      "source": [
+        "Individuals (who freely upload a PGP key on the server)"
+      ],
+      "data": [
+        {
+          "description": "A PGP key can include email address, name and surname and image",
+          "category": "Personal details"
+        }
+      ]
+    },
+    "retention_period": "The retention schedule for this processing activity is unlimited. OpenPGP key servers do not allow removal of keys by design. CIRCL cannot modify this design due to the distributed and synchronisation feature of OpenPGP key servers",
+    "controller": "CIRCL",
+    "data_processor": "No",
+    "recipients": [
+      "Public access"
+    ],
+    "international_transfer": {
+      "transfer": false
+    },
+    "data_subject_rights": {
+      "restrictions": [
+        {
+          "rigths": [
+            "right_of_erasure",
+            "right_of_restriction",
+            "right_of_rectification"
+          ],
+          "justification": {
+            "articles": "Other",
+            "details": "Due to the inner functioning of the OpenPGP server, it is not possible to remove nor modify the PGP keys"
+          }
+        }
+      ],
+      "transparency": {
+        "required": true,
+        "data_subjects": [
+          "Individuals (who freely upload a PGP key on the server)"
+        ],
+        "source": "personal data are collected from the data subject",
+        "details": "Disclaimer on PGP upload function",
+        "references": "http://pgp.circl.lu/"
+      },
+      "right_of_access": [
+        "Public access"
+      ],
+      "right_of_erasure": [
+        "23_pgp_key_removal.txt"
+      ]
+    },
+    "security_measures": {
+      "pseudonymisation": "No"
+    }
+  }
+]
