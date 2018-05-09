@@ -11,4 +11,4 @@ Before submitting a public PGP key to the server, the submitter is obliged to ch
 
 The submitter should specifically verify that the name and surname in the PGP key, the physical address and pictures (if any) are allowed to be made public. Any personal data you do not want to be made public, should be removed. Please note that the email address is the only mandatory field when uploading a PGP key.
 
-For more information on the processing of your personal data, we would like to refer you to our [Privacy Notice](https://www.circl.lu/).
+For more information on the processing of your personal data, we would like to refer you to our [Privacy Notice](https://www.circl.lu/privacy/).
