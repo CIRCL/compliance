@@ -14,7 +14,7 @@ This repository contains information and materials to support CSIRT activities a
 ### Privacy notices for CSIRT services
 
 - [Privacy notice for OpenPGP keyserver](gdpr/notice-template/privacy_notice_openpgpkeyserver.md)
-- [Generic Privacy notice - CIRCL](https://www.circl.lu/privacy/) - reusable under the terms of the Creative Common Attribution 4.0 International (CC BY 4.0) license.
+- [Generic Privacy notice - CIRCL](https://www.circl.lu/privacy/) - [privacy notice in Markdown format](gdpr/notice-template/privacy.md) reusable under the terms of the Creative Common Attribution 4.0 International (CC BY 4.0) license.
 
 ### Additional documents
 
