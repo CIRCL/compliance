@@ -14,3 +14,9 @@ This repository contains information and materials to support CSIRT activities a
 ### Privacy notices for CSIRT services
 
 - [Privacy notice for OpenPGP keyserver](gdpr/notice-template/privacy_notice_openpgpkeyserver.md)
+- [Generic Privacy notice - CIRCL](https://www.circl.lu/privacy/) - reusable under the terms of the Creative Common Attribution 4.0 International (CC BY 4.0) license.
+
+### Additional documents
+
+- [MISP - Information sharing and cooperation enabled by GDPR](https://www.misp-project.org/compliance/gdpr/information_sharing_and_cooperation_gdpr.html)
+- [MISP - How MISP enables stakeholders identified by the NISD to perform key activities](https://www.misp-project.org/compliance/NISD/)
