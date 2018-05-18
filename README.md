@@ -24,3 +24,7 @@ This repository contains information and materials to support CSIRT activities a
 
 - [MISP - Information sharing and cooperation enabled by GDPR](https://www.misp-project.org/compliance/gdpr/information_sharing_and_cooperation_gdpr.html)
 - [MISP - How MISP enables stakeholders identified by the NISD to perform key activities](https://www.misp-project.org/compliance/NISD/)
+
+### Acknowledgement
+
+This work is co-financed by the European Union under the CEF grant 2016-LU-IA-0098 and [CIRCL](https://www.circl.lu/). Thanks to all the contributors who helped by providing feedback, issues and documents.
