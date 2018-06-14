@@ -121,7 +121,7 @@ To tackle privacy-by-design for OpenPGP ley servers, CIRCL suggests a new approa
 
 ## Q8. How can the new GDPR related taxonomies be used by organisations operating a MISP instance?
 
-Two data protection related taxonomies (["gdpr"](https://github.com/MISP/misp-taxonomies/tree/master/gdpr) and ["fpf"](https://github.com/MISP/misp-taxonomies/tree/master/fpf)) were recently added by CIRCL in the MISP GitHub repository. Those taxonomies are a first step into categorizing attributes as personal data in MISP.
+Two data protection related taxonomies (["gdpr"](https://www.misp-project.org/taxonomies.html#_gdpr) and ["fpf"](https://www.misp-project.org/taxonomies.html#_fpf) were recently added by CIRCL in the MISP GitHub repository. Those taxonomies are a first step into categorizing attributes as personal data in MISP.
 
 Organisations are encouraged to define a set of standard taxonomies to be systematically used to classify MISP events and/or attributes. For example, CSIRTs are encouraged to use the TLP taxonomy for every events. Those GDPR related taxonomies could be used by organisation to classified their personal data in MISP, and the degree of identifiability of those personal data. Additionally, organisation can choose not to send or receive events or attributes tagged with specific taxonomies. For more information on the MISP filtering capabilities, please refer to the MISP documentation.
 
