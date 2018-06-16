@@ -14,7 +14,7 @@ When using AIL, a user usually perform the three steps below:
 
 This process is illustrated in the figure below:
 
-<img src="./images/AIL_processes.svg" alt="AIL processes" style="width: 100%;"/>
+<img src="./images/AIL_processes.png" alt="AIL processes" style="width: 100%;"/>
 
 *FIGURE 1: STEPS OF THE PROCESSING OF INFORMATION LEAKS*
 
