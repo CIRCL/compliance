@@ -22,8 +22,14 @@ This repository contains information and materials to support CSIRT activities a
 
 ### Additional documents
 
+#### MISP and information sharing
+
 - [MISP - Information sharing and cooperation enabled by GDPR](https://www.misp-project.org/compliance/gdpr/information_sharing_and_cooperation_gdpr.html)
 - [MISP - How MISP enables stakeholders identified by the NISD to perform key activities](https://www.misp-project.org/compliance/NISD/)
+
+#### Analysis Information Leak framework (AIL) and MISP
+
+* [AIL information leaks analysis and the GDPR in the context of collection, analysis and sharing information leaks](./gdpr/articles/information-leaks-analysis-and-gdpr.md)
 
 ### Acknowledgement
 
