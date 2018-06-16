@@ -1,3 +1,14 @@
+---
+title: "AIL information leaks analysis and the GDPR in the context of collection, analysis and sharing information leaks"
+author: [CIRCL Computer Incident Response Center Luxembourg, and External Contributors]
+date: 2018-06-16
+tags: [privacy, AIL, information leaks, leaks]
+titlepage: true
+toc-own-page: true
+number-sections: true
+titlepage-rule-color: EC2A3F
+...
+
 # AIL information leaks analysis and the GDPR in the context of collection, analysis and sharing information leaks
 
 ## Introduction
@@ -14,7 +25,7 @@ When using AIL, a user usually perform the three steps below:
 
 This process is illustrated in the figure below:
 
-<img src="./images/AIL_processes.png" alt="AIL processes" style="width: 100%;"/>
+![AIL processes of information leaks](https://raw.githubusercontent.com/CIRCL/compliance/master/gdpr/articles/images/AIL_processes.png)
 
 *FIGURE 1: STEPS OF THE PROCESSING OF INFORMATION LEAKS*
 
