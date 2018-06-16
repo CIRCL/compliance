@@ -4,12 +4,12 @@
 
 The General Data Protection Regulation (GDPR) aims to reduce legal uncertainty and limit the interpretations by setting out clear conditions for the processing and sharing of personal data. It is applicable since May 25th, 2018 and applies regardless of whether the processing takes place in the European Union (Article 3). The GDPR distinguishes the roles and obligations of data controllers and data processors, provides definitions of personal data and establishes the conditions under which information can be processed and shared.
 
-The Analysis for Information Leaks (AIL) is a modular framework to analyse potential information leaks from unstructured data sources such as Pastebin and other publically available information sources. AIL is composed of modules which allow filtering the information leaks related to specific data categories. AIL has a set of default modules and custom modules can be developed. The output provided by AIL can be imported into MISP through ail-leak object and then shared with the MISP community. CSIRTs may also choose to publish information on the organisations affected by the information leaks in order to notify victims and raise awareness not only among other CSIRTs, but organisations, service providers and individuals as well. For example, CIRCL released and regularly update its [TR-46 article](https://www.circl.lu/pub/tr-46/) in aiming at suggesting appropriate reactions of users of the service that leaked the information.
+The [Analysis for Information Leaks (AIL) is a modular framework](https://github.com/CIRCL/AIL-framework) to analyse potential information leaks from unstructured data sources such as Pastebin and other publicly available information sources. AIL is composed of modules which allow filtering the information leaks related to specific data categories. AIL has a set of default modules and custom modules can be developed. The output provided by AIL can be imported into MISP through ail-leak object and then shared with the MISP community. CSIRTs may also choose to publish information on the organisations affected by the information leaks in order to notify victims and raise awareness not only among other CSIRTs, but organisations, service providers and individuals as well. For example, CIRCL released and regularly update its [TR-46 article](https://www.circl.lu/pub/tr-46/) in aiming at suggesting appropriate reactions of users of the service that leaked the information.
 
 When using AIL, a user usually perform the three steps below:
 
 1. **collection** (by crawling public websites and collecting unstructured data from sources such as Pastebin)
-2. **analysis** (analysis of information collected via AIL) and
+2. **analysis** (analysis of information collected via AIL framework) and
 3. **sharing** (sharing information leaks with the ail-leak object in MISP).
 
 This process is illustrated in the figure below:
@@ -41,7 +41,7 @@ As previously explained, information leaks are shared through MISP via the **ail
 * “Text”: contains a description of the leak, including potential victims’ information.
 
 
-It is to be noted that AIL may process special categories of data, as defined in the GDPR (Art. 9), i.e. data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person’s sex life or sexual orientation. For example, information posted on Pastebin may relate to political, religious or philosophical beliefs (i.e. from social media) and could be collected via AIL by users in their own custom modules. In such instances, the GDPR (Article 9) prohibits the processing of special categories except when specific conditions apply (e.g. if the processing constitutes a legitimate interest of the data controller provided that appropriate safeguards are applied to protect the data or for the reasons of a “substantial public interest, on the basis of Union or Member State law” etc.). 
+It is to be noted that AIL may process special categories of data, as defined in the GDPR (Art. 9), i.e. data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person’s sex life or sexual orientation. For example, information posted on Pastebin may relate to political, religious or philosophical beliefs (i.e. from social media) and could be collected via AIL by users in their own custom modules. In such instances, the GDPR (Article 9) prohibits the processing of special categories except when specific conditions apply (e.g. if the processing constitutes a legitimate interest of the data controller provided that appropriate safeguards are applied to protect the data or for the reasons of a “substantial public interest, on the basis of Union or Member State law” etc.).
 
 ## Who is the Controller when collecting, analysing and sharing information leaks via an AIL instance and an ail-leak MISP object?
 
@@ -57,7 +57,7 @@ The following paragraphs detail the legal grounds under which personal data can 
 
 Consent of the data subject is in many cases not feasible in practice and often impossible or illogical to obtain. The consent must be given by a statement or a clear affirmative action. Nonetheless, the data controller should be able to demonstrate it (Art. 7 Conditions for consent). In the context of information leaks, it is difficult:
 
-* To identify the data subject victim of the leak. Even when the leak concerns email addresses or phones, usually the suspicion that the actual warning or consent email could be a phishing is too high for the data subject, and hence is ignored; 
+* To identify the data subject victim of the leak. Even when the leak concerns email addresses or phones, usually the suspicion that the actual warning or consent email could be a phishing is too high for the data subject, and hence is ignored;
 * To ask for the consent of each data subject targeted by information leaks as many people can be involved (e.g. 117 millions LinkedIn accounts leaks from a 2012 hack);
 
 For some cases, data subjects that are victims of a data breach may be asked for consent by the entity that has detected the information leak prior to sharing their personal data with ail-leak object in MISP.
@@ -76,12 +76,12 @@ Entities such as public CSIRTs can process personal data if acting under a speci
 
 ### Art. 6(1)(f) - Legitimate interest
 
-Recital 49 explicitly refers to CSIRTs’ right to process personal data provided that they have a legitimate interest and that such interests are not overridden by the fundamental rights and freedoms of data subjects. Collecting, processing and sharing information leaks constitutes a legitimate interest specifically for CSIRTs, as it is aligned with the purpose and scope of most CSIRTs mandates. Indeed, collecting, detecting and sharing information leaks will enable CSIRTs to better prevent and mitigate attacks by, for example, identifying credentials leaks that can be used to connect to critical system. 
+Recital 49 explicitly refers to CSIRTs’ right to process personal data provided that they have a legitimate interest and that such interests are not overridden by the fundamental rights and freedoms of data subjects. Collecting, processing and sharing information leaks constitutes a legitimate interest specifically for CSIRTs, as it is aligned with the purpose and scope of most CSIRTs mandates. Indeed, collecting, detecting and sharing information leaks will enable CSIRTs to better prevent and mitigate attacks by, for example, identifying credentials leaks that can be used to connect to critical system.
 
 ## Does the GDPR allow CSIRTs to collect, analyse and share information leaks through AIL and MISP ail-leak object?
 
 As noted above, the GDPR enables information exchange of personal data as long as it is performed for the purposes of ensuring network and information security or if it constitutes the legitimate interest of the data controller (e.g. preventing unauthorised access to sensible machine after credential leaks) (Recital 49). A processing activity should comply with the six principles in Art. 5, which could be summarized as: “lawfulness, fairness and transparency”, “purpose limitation”, “data minimisation”, “accuracy”, “storage limitation”.
- 
+
 In most cases when collecting, analysing and sharing information leaks, the information leaks come from stolen data, hence the processed personal data has not been obtained from the data subject. In this case, Art. 14 triggers the application of the **transparency principle**. This article requires that specific information, such as identity and contact details of the controller, is provided to the data subject. However, it can be difficult to provide such information to the information leak victims as the list can be very long. The GDPR has foreseen such use cases where consent may be difficult or impossible to obtain and provides some exceptions. Article 14(5)(b) is of particular relevance to AIL usage cases, as it states that Art. 14(1) to (4) shall not apply if “the obligation referred to in paragraph 1 of this Article is likely to render impossible or seriously impair the achievement of the objectives of that processing”. This restriction needs however to be balanced with “appropriate measures” such as “making the information publicly available”. For example, CSIRTs could make information about their processing activities publicly available in line with RFC 2350 and GDPR Art. 14(1) and (2).
 
 As AIL is a modular platform, processing modules can be removed, modified or added into the platform. For instance, removing the Credit Cards module deactivate the detection of credit card information leaks. In addition, when creating an ail-leak object, it is possible to select only necessary personal data leaked to share in order to provide **data minimisation and purpose limitation**.
@@ -92,7 +92,7 @@ Information stored into AIL cannot be modified through the user interface once r
 
 ## Conclusion
 
-The benefits of the AIL project and the collection, analysis and sharing of information leaks via the ail-leak object in MISP are in support of threat intelligence. On one hand, discovering additional leaks in a timely manner allows CSIRTs to improve their incident response time. On the other hand, an early warning of an information leak incident to the affected parties and constituents can help them take action sooner to mitigate the impact of the information leaks. Furthermore, the GDPR does not prevent the collection, analysis and sharing of information leaks with AIL and ail-leak object in MISP as long as the processing of the personal data is aligned with the Regulation principles and is based on a lawful ground. 
+The benefits of the AIL project and the collection, analysis and sharing of information leaks via the ail-leak object in MISP are in support of threat intelligence. On one hand, discovering additional leaks in a timely manner allows CSIRTs to improve their incident response time. On the other hand, an early warning of an information leak incident to the affected parties and constituents can help them take action sooner to mitigate the impact of the information leaks. Furthermore, the GDPR does not prevent the collection, analysis and sharing of information leaks with AIL and ail-leak object in MISP as long as the processing of the personal data is aligned with the Regulation principles and is based on a lawful ground.
 
 ## Reference
 
@@ -100,7 +100,7 @@ The benefits of the AIL project and the collection, analysis and sharing of info
 2.	[CIRCL(2018) “AIL Framework for Analysis of Information Leaks: From a CSIRT use-case towards a generic analysis open source software”](https://www.first.org/resources/papers/conf2017/AIL-Framework-Analysis-Information-Leak-Framework.pdf)
 3.	[List compiled based on MISP Objects Guide](https://www.misp.software/objects.pdf)
 4.	[CIRCL, “TR-46 – Information Leaks Affecting Luxembourg and Recommendations”](https://www.circl.lu/pub/tr-46/)
-
+5.  [AIL framework - Analysis Information Leak framework](https://github.com/CIRCL/AIL-framework)
 
 ## Acknowledgment
 
@@ -110,4 +110,4 @@ This document was partially funded by CEF (Connecting Europe Facility) funding u
 
 ## Contact and Collaboration
 
-If you have any question or suggestion about this topic, feel free to [contact us](https://www.circl.lu/contact/). This document is a collaborative effort where external [contributors can propose changes and improvement](https://github.com/MISP/misp-compliance/tree/master/GDPR) the document.
+If you have any question or suggestion about this topic, feel free to [contact us](https://www.circl.lu/contact/). This document is a collaborative effort where external [contributors can propose changes and improvement](https://github.com/CIRCL/compliance/blob/master/gdpr/articles/information-leaks-analysis-and-gdpr.md) the document.
