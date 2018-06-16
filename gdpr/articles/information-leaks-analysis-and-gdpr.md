@@ -1,12 +1,13 @@
 ---
 title: "AIL information leaks analysis and the GDPR in the context of collection, analysis and sharing information leaks"
-author: [CIRCL Computer Incident Response Center Luxembourg, and External Contributors]
+author: [CIRCL Computer Incident Response Center Luxembourg]
 date: 2018-06-16
 tags: [privacy, AIL, information leaks, leaks]
 titlepage: true
 toc-own-page: true
 number-sections: true
 titlepage-rule-color: EC2A3F
+colorlinks: true
 ...
 
 # AIL information leaks analysis and the GDPR in the context of collection, analysis and sharing information leaks
