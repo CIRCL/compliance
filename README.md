@@ -29,7 +29,7 @@ This repository contains information and materials to support CSIRT activities a
 
 #### Analysis Information Leak framework (AIL) and MISP
 
-* [AIL information leaks analysis and the GDPR in the context of collection, analysis and sharing information leaks](./gdpr/articles/information-leaks-analysis-and-gdpr.md)
+- [AIL information leaks analysis and the GDPR in the context of collection, analysis and sharing information leaks](./gdpr/articles/information-leaks-analysis-and-gdpr.md) - [PDF version](https://www.circl.lu/assets/files/information-leaks-analysis-and-gdpr.pdf)
 
 ### Acknowledgement
 
