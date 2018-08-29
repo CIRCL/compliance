@@ -14,7 +14,7 @@ colorlinks: true
 
 ## Introduction
 
-The role of a CSIRT (Computer Security Incident Response Team) is key in information society and especially to improve cyber security in their constituencies and beyond. To achieve this, CSIRTs often have significant operational constraints such as limited budgets, a bound number of resources or/and overloaded staff members. Tooling, such as software or tools used in day-to-day activities in Digital Forensic, Incident Response and Threat Intelligence, offers CSIRTs to operate more efficiently the processing of constant flow of information and act in a timely manner (such as notifying victims, reporting, information sharing at European or International level or investigating technical evidences). In this document, a set of best practices is described to help CSIRTs to develop, maintain and distribute existing or new Open Source tools.
+The role of a CSIRT (Computer Security Incident Response Team) is key in information society and especially to improve cyber security in their constituencies and beyond. To achieve this, CSIRTs often have significant operational constraints such as limited budgets (in many settings, CSIRTs are considered cost centers), a bound number of resources or/and overloaded staff members. Tooling, such as software or tools used in day-to-day activities in Digital Forensic, Incident Response and Threat Intelligence, offers CSIRTs to operate more efficiently the processing of constant flow of information and act in a timely manner (such as notifying victims, reporting, information sharing at European or International level or investigating technical evidences). In this document, a set of best practices is described to help CSIRTs to develop, maintain and distribute existing or new Open Source tools.
 
 ### Definition
 
@@ -29,6 +29,7 @@ A source control management repository for CSIRT tooling allows:
 - To track the evolution and overall activity of a project including releases, versioning and patches
 - To review the source code and ease the process of security assessment
 - To monitor contributions and support new external contributions easily
+- To report bugs and track their resolution
 
 Another significant benefit of relying on a public source control management such as *git* is to keep track of all changes in the commit messages associated with related changes. This allows to understand the background of a source code change and improve the overall level of documentation of a project. Such level of transparency is an important requirement for tools and software which will be used for critical security operations. An issue tracker is also a must in order to allow users to easily report back bugs, open new features requests or ask specific question about the tool/software. It gives also insight if security vulnerabilities and assessment processes are properly implemented.
 
@@ -36,7 +37,7 @@ Software development methodologies also play a key role to attract new developer
 
 ### Recommendations
 
-* CSIRT tooling must have at least one source control management repository (if the project is larger, multiple repositories might be required)
+* CSIRT tooling must have at least one (open) source control management repository (if the project is larger, multiple repositories might be required)
 * CSIRT tooling repository must be publicly accessible
 * CSIRT tooling repository must allow external contributors to propose changes (via pull-request) and open issues easily
 
@@ -44,9 +45,9 @@ Software development methodologies also play a key role to attract new developer
 
 CSIRTs play an important role in awareness raising for security vulnerability notifications. It's an opportunity for the CSIRTs to demonstrate the importance of security disclosure processes when producing software on their own. Having a specific section in the software documentation or main page describing the point-of-contact to report potential security vulnerabilities (with an associated PGP key) is a must.
 
-If a vulnerability is found in the CSIRT tooling, a CVE assignment and publication are required to easily reach out your user base with precise information. Additional notifications to your users via different channels are often recommended (such as mailing-lists, social media or private notification to your constituency).
+If a vulnerability is found in the CSIRT tooling, a CVE assignment[^CVE] and publication are required to easily reach out your user base with precise information. Additional notifications to your users via different channels are often recommended (such as mailing-lists, social media or private notification to your constituency).
 
-Regular security assessment (from manual review, automatic review or even fuzzing) of the CSIRT tooling is recommended to ensure a better overview of the current security state of the developed software. Documenting potential weak points with security countermeasures is a way to ensure that users operate the software in adequate conditions.
+Regular security assessment (from manual review, automatic review or even fuzzing) of the CSIRT tooling is highly recommended to ensure a better overview of the current security state of the developed software. Documenting potential weak points with security countermeasures is a way to ensure that users operate the software in adequate conditions.
 
 ### Recommendations
 
@@ -75,8 +76,7 @@ When selecting an open source license for your CSIRT tooling, multiple parameter
 
 ## Privacy and Personal Data Processing
 
-The aim of developing CSIRT tooling is to support Incident Response teams in their day-to-day activities. Processing incident-related or threat intelligence data might include personal
-information. It is strongly recommended to review the privacy implication of developing and also distributing such a tool. In order to clarify the scope and help potential users
+The aim of developing CSIRT tooling is to support Incident Response teams in their day-to-day activities. Processing incident-related or threat intelligence data might include personal information. It is strongly recommended to review the privacy implication of developing and also distributing such a tool. In order to clarify the scope and help potential users
 to ensure lawfulness, a review of the privacy implication might be included along with the CSIRT tooling (see AIL software privacy review[^ail-privacy-review] as an example or the one for MISP called Information sharing and cooperation enabled by GDPR[^gdpr-misp]).
 
 ### Recommendations
@@ -86,11 +86,12 @@ to ensure lawfulness, a review of the privacy implication might be included alon
 
 ## Contribution and Collaboration
 
-Attracting contributors is a key element for a CSIRT tooling to assure sustainability of the project. Contributors often start as a user of the CSIRT tooling. A welcoming environment fosters users to contribute and collaborate more in a project. In order to reach such a collaborative environment, a code-of-conduct might help to attract more contributors and collaboration within a CSIRT tooling project.
+Attracting contributors is a key element for a CSIRT tooling to assure sustainability of the project. Contributors often start as a user of the CSIRT tooling. A welcoming environment fosters users to contribute and collaborate more in a project. In order to reach such a collaborative environment, a code-of-conduct might help to attract more contributors and collaboration within a CSIRT tooling project. One of the best practices in open source projects is the establishment of either mailing lists or chat channels (or both) in addition to the bug tracker of the source control management repository.
 
 ### Recommendations
 
 * CSIRT tooling should include a code-of-conduct such as *Contributor Covenant Code of Conduct*[^code-of-conduct].
+* Chat channels and/or mailing lists help with empowering a community[^community].
 
 ## Interoperability
 
@@ -100,9 +101,9 @@ Another significant adoption of CSIRT tooling is the ability to integrate the to
 - Reusing existing free and open standards
 - Reusing existing data models or data representation (such as the common taxonomies[^misp-taxonomies] or misp-objects[^misp-objects])
 - Integrated connectors with existing CSIRT tooling
+- if the tool invented some network protocol - documentation of the networking protocol as an IETF RFC[^ietf].
 
-The sustainability of a CSIRT tooling often depends on the ability of users to integrate the software with legacy systems or existing processes. The more options available
-to the users will ensure a constant usage of the CSIRT tooling. If the CSIRT tooling reaches a significant maturity, publication of the format can be submitted to standardisation
+The sustainability of a CSIRT tooling often depends on the ability of users to integrate the software with legacy systems or existing processes. The more options available to the users will ensure a constant usage of the CSIRT tooling. If the CSIRT tooling reaches a significant maturity, publication of the format can be submitted to standardisation
 process such as IETF, ITU or OASIS (such as the MISP-rfc format[^misp-rfc]).
 
 ### Recommendations
@@ -117,6 +118,9 @@ Developing CSIRT tooling within an open source methodology allows to reach new a
 ## References
 
 [^pmf-model]: [Programming Methodology Framework aka PMF](https://raw.githubusercontent.com/adulau/pmf/master/raw.md.txt)
+[^CVE]: [Common Vulnerabilities and Exposure](https://cve.mitre.org/)
+[^ietf]: [Internet Engineering Task Force](https://www.ietf.org)
+[^community]: [The Art of Community](http://shop.oreilly.com/product/9780596157234.do)
 [^git]: Git is just the core free software to handle the SCM (Source Code Management) repository. A CSIRT can operate a publicly-owned collaborative platform such as [gitlab](https://www.gitlab.com/), gitea or rely on an existing public service such as [GitHub](https://www.github.com/).
 [^fsf-compatibility]: [FSF list of license compatible with the GNU GPL](https://www.gnu.org/licenses/license-list.en.html#SoftwareLicenses)
 [^osi-approved-licenses]: [Approved licenses from the open source initiative](https://opensource.org/licenses)
