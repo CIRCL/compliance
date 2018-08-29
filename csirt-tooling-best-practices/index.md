@@ -131,14 +131,14 @@ Developing CSIRT tooling within an open source methodology allows to reach new a
 
 |Software|CSIRT lead|Location|
 |--- |--- |---|
-|MISP|CIRCL|https://www.misp-project.org/|
-|AIL|CIRCL|https://github.com/CIRCL/AIL-framework|
-|BGP Ranking|CIRCL|https://github.com/D4-project/BGP-Ranking|
-|cve-search|CIRCL|https://github.com/cve-search/|
-|IntelMQ|CERT.at|https://github.com/certtools/intelmq|
-|n6|CERT.pl|https://github.com/CERT-Polska/n6|
-|TheHive|BDF CERT|https://github.com/TheHive-Project/TheHive|
-|Cortex|BDF CERT|https://github.com/TheHive-Project/Cortex-Analyzers/|
+|MISP|CIRCL|[https://www.misp-project.org/](https://www.misp-project.org/])|
+|AIL|CIRCL|[https://github.com/CIRCL/AIL-framework](https://github.com/CIRCL/AIL-framework)|
+|BGP Ranking|CIRCL|[https://github.com/D4-project/BGP-Ranking](https://github.com/D4-project/BGP-Ranking)|
+|cve-search|CIRCL|[https://github.com/cve-search/](https://github.com/cve-search/)|
+|IntelMQ|CERT.at|[https://github.com/certtools/intelmq](https://github.com/certtools/intelmq])|
+|n6|CERT.pl|[https://github.com/CERT-Polska/n6](https://github.com/CERT-Polska/n6)|
+|TheHive|BDF CERT|[https://github.com/TheHive-Project/TheHive](https://github.com/TheHive-Project/TheHive)|
+|Cortex|BDF CERT|[https://github.com/TheHive-Project/Cortex-Analyzers/](https://github.com/TheHive-Project/Cortex-Analyzers/)|
 
 ## Revision of the document
 
