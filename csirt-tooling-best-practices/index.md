@@ -98,12 +98,12 @@ Another significant adoption of CSIRT tooling is the ability to integrate the to
 
 - A documented ReST API
 - Reusing existing free and open standards
-- Reusing existing data models or data representation (such as the common taxonomies[^misp-taxonomies])
+- Reusing existing data models or data representation (such as the common taxonomies[^misp-taxonomies] or misp-objects[^misp-objects])
 - Integrated connectors with existing CSIRT tooling
 
 The sustainability of a CSIRT tooling often depends on the ability of users to integrate the software with legacy systems or existing processes. The more options available
 to the users will ensure a constant usage of the CSIRT tooling. If the CSIRT tooling reaches a significant maturity, publication of the format can be submitted to standardisation
-process such as IETF, ITU or OASIS.
+process such as IETF, ITU or OASIS (such as the MISP-rfc format[^misp-rfc]).
 
 ### Recommendations
 
@@ -112,13 +112,9 @@ process such as IETF, ITU or OASIS.
 
 ## Conclusion
 
-Developing CSIRT tooling within an open source methodology allows to reach new audiences, to bring new use-cases and to ensure improved integrations with existing practices in CSIRT. The initial work
-to release as an open source can introduce some additional work but the benefit is often larger than the initial cost. The objective of this document is to list all the best practices in the field.
+Developing CSIRT tooling within an open source methodology allows to reach new audiences, to bring new use-cases and to ensure improved integrations with existing practices in CSIRT. The initial work to release as an open source can introduce some additional work but the benefit is often larger than the initial cost. The objective of this document is to list all the best practices in the field.
 
 ## References
-
-3.	[List compiled based on MISP Objects Guide](https://www.misp.software/objects.pdf)
-4.	[CIRCL, “TR-46 – Information Leaks Affecting Luxembourg and Recommendations”](https://www.circl.lu/pub/tr-46/)
 
 [^pmf-model]: [Programming Methodology Framework aka PMF](https://raw.githubusercontent.com/adulau/pmf/master/raw.md.txt)
 [^git]: Git is just the core free software to handle the SCM (Source Code Management) repository. A CSIRT can operate a publicly-owned collaborative platform such as [gitlab](https://www.gitlab.com/), gitea or rely on an existing public service such as [GitHub](https://www.github.com/).
@@ -128,6 +124,8 @@ to release as an open source can introduce some additional work but the benefit 
 [^gdpr-misp]: [Information sharing and cooperation enabled by GDPR](https://github.com/MISP/misp-compliance/blob/master/GDPR/information_sharing_and_cooperation_gdpr.md)
 [^code-of-conduct]: [A Code of Conduct for Open Source Projects](https://www.contributor-covenant.org/)
 [^misp-taxonomies]: [MISP Taxonomies is a set of common classification libraries to tag, classify and organise information](https://github.com/MISP/misp-taxonomies)
+[^misp-objects]: [MISP object template definition generated from specification files](https://www.misp.software/objects.pdf)
+[^misp-rfc]: [The specification and formats used in the MISP project](https://github.com/MISP/misp-rfc)
 
 ## Existing CSIRT tooling
 
