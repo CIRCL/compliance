@@ -1,7 +1,7 @@
 ---
 title: "AIL information leaks analysis and the GDPR in the context of collection, analysis and sharing information leaks"
 author: [CIRCL Computer Incident Response Center Luxembourg]
-date: 2018-06-16
+date: 2018-08-29
 tags: [privacy, AIL, information leaks, leaks]
 titlepage: true
 toc-own-page: true
@@ -90,11 +90,13 @@ Entities such as public CSIRTs can process personal data if acting under a speci
 
 Recital 49 explicitly refers to CSIRTs’ right to process personal data provided that they have a legitimate interest and that such interests are not overridden by the fundamental rights and freedoms of data subjects. Collecting, processing and sharing information leaks constitutes a legitimate interest specifically for CSIRTs, as it is aligned with the purpose and scope of most CSIRTs mandates. Indeed, collecting, detecting and sharing information leaks will enable CSIRTs to better prevent and mitigate attacks by, for example, identifying credentials leaks that can be used to connect to critical system.
 
+As mention in p.28 of Article 29 Opinion 06/2014 on Legitimate Interests and section 4.1.1 of "Incident Response: Protecting Individual Rights Under the General Data Protection Regulation" [^incident-response-gdpr] in Volume 13, issue 3 of scripted academic journal, the interest of third parties is important and ensuring that the processing is used to notify organisations or individuals can reinforce the legitimate interest.
+
 ## Does the GDPR allow CSIRTs to collect, analyse and share information leaks through AIL and MISP ail-leak object?
 
 As noted above, the GDPR enables information exchange of personal data as long as it is performed for the purposes of ensuring network and information security or if it constitutes the legitimate interest of the data controller (e.g. preventing unauthorised access to sensible machine after credential leaks) (Recital 49). A processing activity should comply with the six principles in Art. 5, which could be summarized as: “lawfulness, fairness and transparency”, “purpose limitation”, “data minimisation”, “accuracy”, “storage limitation”.
 
-In most cases when collecting, analysing and sharing information leaks, the information leaks come from stolen data, hence the processed personal data has not been obtained from the data subject. In this case, Art. 14 triggers the application of the **transparency principle**. This article requires that specific information, such as identity and contact details of the controller, is provided to the data subject. However, it can be difficult to provide such information to the information leak victims as the list can be very long. The GDPR has foreseen such use cases where consent may be difficult or impossible to obtain and provides some exceptions. Article 14(5)(b) is of particular relevance to AIL usage cases, as it states that Art. 14(1) to (4) shall not apply if “the obligation referred to in paragraph 1 of this Article is likely to render impossible or seriously impair the achievement of the objectives of that processing”. This restriction needs however to be balanced with “appropriate measures” such as “making the information publicly available”. For example, CSIRTs could make information about their processing activities publicly available in line with RFC 2350 and GDPR Art. 14(1) and (2).
+In most cases when collecting, analysing and sharing information leaks, the information leaks come from stolen data, hence the processed personal data has not been obtained from the data subject. In this case, Art. 14 triggers the application of the **transparency principle**. This article requires that specific information, such as identity and contact details of the controller, is provided to the data subject. However, it can be difficult to provide such information to the information leak victims as the list can be very long. The GDPR has foreseen such use cases where consent may be difficult or impossible to obtain and provides some exceptions. Article 14(5)(b) is of particular relevance to AIL usage cases, as it states that Art. 14(1) to (4) shall not apply if “the obligation referred to in paragraph 1 of this Article is likely to render impossible or seriously impair the achievement of the objectives of that processing”. This restriction needs however to be balanced with “appropriate measures” such as “making the information publicly available”. For example, CSIRTs could make information about their processing activities publicly available in line with RFC 2350 and GDPR Art. 14(1) and (2) to comply with requirement to notify.
 
 As AIL is a modular platform, processing modules can be removed, modified or added into the platform. For instance, removing the Credit Cards module deactivate the detection of credit card information leaks. In addition, when creating an ail-leak object, it is possible to select only necessary personal data leaked to share in order to provide **data minimisation and purpose limitation**.
 
@@ -113,6 +115,8 @@ The benefits of the AIL project and the collection, analysis and sharing of info
 3.	[List compiled based on MISP Objects Guide](https://www.misp.software/objects.pdf)
 4.	[CIRCL, “TR-46 – Information Leaks Affecting Luxembourg and Recommendations”](https://www.circl.lu/pub/tr-46/)
 5.  [AIL framework - Analysis Information Leak framework](https://github.com/CIRCL/AIL-framework)
+
+[^incident-response-gdpr]: [Incident Response: Protecting Individual Rights Under the General Data Protection Regulation](https://script-ed.org/article/incident-response-protecting-individual-rights-under-the-general-data-protection-regulation/)
 
 ## Acknowledgment
 
