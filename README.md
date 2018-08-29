@@ -2,7 +2,7 @@
 
 This repository contains information and materials to support CSIRT activities and especially regarding legal compliance.
 
-## GDPR
+## GDPR and privacy-related activities for CSIRTs
 
 - [JSON Schema for GDPR records of processing activities](https://github.com/CIRCL/compliance/blob/master/gdpr/json-schema/processing-activities-records-schema.json)
 - [Processing activity - an example with PGP Keyserver service](https://github.com/CIRCL/compliance/blob/master/gdpr/json-schema/processing-activities-records-example.json)
@@ -31,6 +31,11 @@ This repository contains information and materials to support CSIRT activities a
 
 - [AIL information leaks analysis and the GDPR in the context of collection, analysis and sharing information leaks](./gdpr/articles/information-leaks-analysis-and-gdpr.md) - [PDF version](https://www.circl.lu/assets/files/information-leaks-analysis-and-gdpr.pdf)
 
-### Acknowledgement
+
+## CSIRT tooling
+
+- [CSIRT Tooling: Best Practices in Developing, Maintaining and Distributing Open Source Tools](https://github.com/CIRCL/compliance/blob/master/csirt-tooling-best-practices/index.md)
+
+## Acknowledgement
 
 This work is co-financed by the European Union under the CEF grant 2016-LU-IA-0098 and [CIRCL](https://www.circl.lu/). Thanks to all the contributors who helped by providing feedback, issues and documents.
