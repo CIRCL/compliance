@@ -18,11 +18,11 @@ The role of a CSIRT (Computer Security Incident Response Team) is key in informa
 
 ### Definition
 
-The term '''CSIRT tooling''' will be used in this document to describe any Open Source or Open Hardware project which aims to support digital forensic or incident response, specifically in the scope of the Computer Security Incident Response Teams.
+The term *CSIRT tooling* will be used in this document to describe any Open Source or Open Hardware project which aims to support digital forensic or incident response, specifically in the scope of the Computer Security Incident Response Teams.
 
 ## Software Development Practices
 
-A critical element in Open Source software development is the availability of the source code in a public repository along with the history of changes. Source control management such as `git` allows everyone to see the development activities (such as bug fixing and updates), to grasp the inner development practices of a tool and the community behind. While developing CSIRT tooling, a publicly[^git] accessible source control management must be used.
+A critical element in Open Source software development is the availability of the source code in a public repository along with the history of changes. Source control management such as *git* allows everyone to see the development activities (such as bug fixing and updates), to grasp the inner development practices of a tool and the community behind. While developing CSIRT tooling, a publicly[^git] accessible source control management must be used.
 
 A source control management repository for CSIRT tooling allows:
 
@@ -30,7 +30,7 @@ A source control management repository for CSIRT tooling allows:
 - To review the source code and ease the process of security assessment
 - To monitor contributions and support new external contributions easily
 
-Another significant benefit of relying on a public source control management such as `git` is to keep track of all changes in the commit messages associated with related changes. This allows to understand the background of a source code change and improve the overall level of documentation of a project. Such level of transparency is an important requirement for tools and software which will be used for critical security operations. An issue tracker is also a must in order to allow users to easily report back bugs, open new features requests or ask specific question about the tool/software. It gives also insight if security vulnerabilities and assessment processes are properly implemented.
+Another significant benefit of relying on a public source control management such as *git* is to keep track of all changes in the commit messages associated with related changes. This allows to understand the background of a source code change and improve the overall level of documentation of a project. Such level of transparency is an important requirement for tools and software which will be used for critical security operations. An issue tracker is also a must in order to allow users to easily report back bugs, open new features requests or ask specific question about the tool/software. It gives also insight if security vulnerabilities and assessment processes are properly implemented.
 
 Software development methodologies also play a key role to attract new developers and contributors (from the CSIRT community or outside). CSIRTs developing tools or software should select the best methodology, fitting the project and/or their team's approach. There are formal methodologies for software engineering and more relaxed ones with an emphasis on the collaboration such as the PMF[^pmf-model] model.
 
@@ -90,7 +90,7 @@ Attracting contributors is a key element for a CSIRT tooling to assure sustainab
 
 ### Recommendations
 
-* CSIRT tooling should include a code-of-conduct such as '''Contributor Covenant Code of Conduct'''[^code-of-conduct].
+* CSIRT tooling should include a code-of-conduct such as *Contributor Covenant Code of Conduct*[^code-of-conduct].
 
 ## Interoperability
 
