@@ -158,4 +158,4 @@ This work was partially funded by CEF (Connecting Europe Facility) funding under
 
 ## Contact and Collaboration
 
-If you have any question or suggestion about this topic, feel free to [contact us](https://www.circl.lu/contact/).
+If you have any question or suggestion about this topic, feel free to [contact us](https://www.circl.lu/contact/). This document is a collaborative effort where external [contributors can propose changes and improvement](https://github.com/CIRCL/compliance/blob/master/csirt-tooling-best-practices/index.md) to the document.
