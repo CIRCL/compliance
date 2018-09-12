@@ -153,6 +153,7 @@ Developing CSIRT tooling within an open source methodology allows to reach new a
 The contributors to the document are:
 
  - Alexandre Dulaunoy - CIRCL
+ - Aaron Kaplan - CERT.at
  - Sascha Rommelfangen - CIRCL
  - Gerard Wagener - CIRCL
 
