@@ -143,6 +143,7 @@ Developing CSIRT tooling within an open source methodology allows to reach new a
 |n6|CERT.pl|[https://github.com/CERT-Polska/n6](https://github.com/CERT-Polska/n6)|
 |TheHive|BDF CERT|[https://github.com/TheHive-Project/TheHive](https://github.com/TheHive-Project/TheHive)|
 |Cortex|BDF CERT|[https://github.com/TheHive-Project/Cortex-Analyzers/](https://github.com/TheHive-Project/Cortex-Analyzers/)|
+|eml-parser|GOVCERT.LU|[https://github.com/GOVCERT-LU/eml_parser](https://github.com/GOVCERT-LU/eml_parser)|
 
 ## Revision of the document
 
