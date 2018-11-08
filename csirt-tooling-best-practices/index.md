@@ -148,6 +148,7 @@ Developing CSIRT tooling within an open source methodology allows to reach new a
 |bootcode-parser|ANSSI-FR|[https://github.com/ANSSI-FR/bootcode_parser](https://github.com/ANSSI-FR/bootcode_parser)|
 |bits-parser|ANSSI-FR|[https://github.com/ANSSI-FR/bits_parser](https://github.com/ANSSI-FR/bits_parser)|
 |AD-control-paths|ANSSI-FR|[https://github.com/ANSSI-FR/AD-control-paths](https://github.com/ANSSI-FR/AD-control-paths)|
+|S4A|CERT-EE|[https://github.com/cert-ee/s4a](https://github.com/cert-ee/s4a)|
 
 ## Revision of the document
 
