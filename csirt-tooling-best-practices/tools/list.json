@@ -156,5 +156,17 @@
     "repository": [
       "https://github.com/ANSSI-FR/AD-control-paths"
     ]
+  },
+  {
+    "name": "S4A",
+    "csirt": [
+      "CERT-EE"
+    ],
+    "location": [
+      "https://github.com/cert-ee/s4a](https://github.com/cert-ee/s4a"
+    ],
+    "repository": [
+      "https://github.com/cert-ee/s4a](https://github.com/cert-ee/s4a"
+    ]
   }
 ]
