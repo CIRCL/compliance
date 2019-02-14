@@ -1,0 +1,160 @@
+[
+  {
+    "name": "MISP",
+    "csirt": [
+      "CIRCL"
+    ],
+    "location": [
+      "https://www.misp-project.org/"
+    ],
+    "repository": [
+      "https://github.com/MISP/MISP"
+    ]
+  },
+  {
+    "name": "AIL",
+    "csirt": [
+      "CIRCL"
+    ],
+    "location": [
+      "https://github.com/CIRCL/AIL-framework"
+    ],
+    "repository": [
+      "https://github.com/CIRCL/AIL-framework"
+    ]
+  },
+  {
+    "name": "BGP Ranking",
+    "csirt": [
+      "CIRCL"
+    ],
+    "location": [
+      "https://bgpranking.circl.lu/"
+    ],
+    "repository": [
+      "https://github.com/D4-project/BGP-Ranking"
+    ]
+  },
+  {
+    "name": "cve-search",
+    "csirt": [
+      "CIRCL"
+    ],
+    "location": [
+      "https://www.cve-search.org"
+    ],
+    "repository": [
+      "https://github.com/cve-search/cve-search"
+    ]
+  },
+  {
+    "name": "IntelMQ",
+    "csirt": [
+      "CERT.at"
+    ],
+    "location": [
+      "https://github.com/certtools/intelmq"
+    ],
+    "repository": [
+      "https://github.com/certtools/intelmq"
+    ]
+  },
+  {
+    "name": "n6",
+    "csirt": [
+      "CERT.pl"
+    ],
+    "location": [
+      "https://github.com/CERT-Polska/n6"
+    ],
+    "repository": [
+      "https://github.com/CERT-Polska/n6"
+    ]
+  },
+  {
+    "name": "TheHive",
+    "csirt": [
+      "CERT-EU",
+      "CERT-BDF"
+    ],
+    "location": [
+      "https://github.com/TheHive-Project/TheHive"
+    ],
+    "repository": [
+      "https://github.com/TheHive-Project/TheHive"
+    ]
+  },
+  {
+    "name": "Cortex",
+    "csirt": [
+      "CERT-EU",
+      "CERT-BDF"
+    ],
+    "location": [
+      "https://github.com/TheHive-Project/Cortex-Analyzers"
+    ],
+    "repository": [
+      "https://github.com/TheHive-Project/Cortex-Analyzers"
+    ]
+  },
+  {
+    "name": "eml-parser",
+    "csirt": [
+      "GOVCERT.LU"
+    ],
+    "location": [
+      "https://github.com/GOVCERT-LU/eml_parser"
+    ],
+    "repository": [
+      "https://github.com/GOVCERT-LU/eml_parser"
+    ]
+  },
+  {
+    "name": "bmc-tools",
+    "csirt": [
+      "ANSSI-FR"
+    ],
+    "location": [
+      "https://github.com/ANSSI-FR/bmc-tools"
+    ],
+    "repository": [
+      "https://github.com/ANSSI-FR/bmc-tools"
+    ]
+  },
+  {
+    "name": "bootcode",
+    "csirt": [
+      "ANSSI-FR"
+    ],
+    "location": [
+      "https://github.com/ANSSI-FR/bootcode_parser"
+    ],
+    "repository": [
+      "https://github.com/ANSSI-FR/bootcode_parser"
+    ]
+  },
+  {
+    "name": "bits-parser",
+    "csirt": [
+      "ANSSI-FR"
+    ],
+    "location": [
+      "https://github.com/ANSSI-FR/bits_parser"
+    ],
+    "repository": [
+      "https://github.com/ANSSI-FR/bits_parser"
+    ]
+  },
+  {
+    "name": "AD-control",
+    "csirt": [
+      "ANSSI-FR"
+    ],
+    "location": [
+      "https://github.com/ANSSI-FR/AD-control-paths"
+    ],
+    "repository": [
+      "https://github.com/ANSSI-FR/AD-control-paths"
+    ]
+  }
+]
